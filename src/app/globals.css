@@ -6,11 +6,9 @@ html {
   scroll-behavior: smooth;
 }
 
-.bg-hero {
-  /* background-color: radial-gradient(circle, #FFFFFF 100%, #FFF0F4 99%); */
+/* .bg-hero {
   background: linear-gradient(to bottom, #FFF0F4 100%, #FFFFFF 100%, #FFF0F4 100%);
 }
-
 .font-thiin {
   font-weight: 500;
-}
+} */
