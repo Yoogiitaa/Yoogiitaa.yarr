@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com';
 import Image from 'next/image';
 import { useState } from 'react';
 import data from '../../data.json';
+import { AnyNsRecord } from 'dns';
 const ContactForm = () => {
     const [check, setCheck] = useState(false);
   const [formData, setFormData] = useState({
@@ -15,11 +16,11 @@ const ContactForm = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     // Send email using EmailJS
-    emailjs.sendForm('service_mzyfdsg', 'template_nmsi0mr', e.target, 'b0zRfKrsS0kwANODN')
+    emailjs.sendForm('service_mzyfdsg', 'template_nmsi0mr', e.target as HTMLFormElement, 'b0zRfKrsS0kwANODN')
       .then((result) => {
         console.log(result.text);
         // Clear form fields after successful submission
