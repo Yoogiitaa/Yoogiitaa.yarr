@@ -5,9 +5,9 @@ import data from '../../data.json'; // Import data.json file
 const Timeline = () => {
   const [events, setEvents] = useState([]);
 
-  useEffect(() => {
-    setEvents(data.events); // Set events from imported data
-  }, []);
+//   useEffect(() => {
+//     // setEvents(data.events); // Set events from imported data
+//   }, []);
 
   return (
     <div className="bg-hero py-20 p-4">
