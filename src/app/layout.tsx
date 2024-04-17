@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Buenos+Aires&display=swap"
@@ -29,8 +29,7 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
+      </head> */}
       <body className={inter.className}>
         <Navbar />
         {children}
