@@ -55,7 +55,7 @@ const ContactForm = () => {
               <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Your Email" className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500" required />
             </div>
             <div className="mb-6">
-              <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" rows="4" className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500" required />
+              <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Your Message" rows={4} className="w-full p-3 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500" required />
             </div>
             <button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-md transition duration-300">Submit</button>
             {check && <p className="text-green-500 text-center mt-4">Message sent successfully!</p>}
