@@ -13,9 +13,6 @@ const Hero = () => {
         <p key={index}>{line}</p>
       ))}
         </span>
-        {/* <div className="flex gap-4 mt-4">
-          <button className="px-4 py-2 bg-pink-400 rounded-md text-xl">Download CV</button>
-        </div> */}
         <div className="mt-6 flex gap-6">
           <a href={data.behance} className="hover:shadow-lg rounded-full">
             <Image
@@ -46,7 +43,7 @@ const Hero = () => {
           </a>
           <a href={data.dribble} className="hover:shadow-lg rounded-full">
             <Image
-              src="/icons/dribble.svg"
+              src="/icons/medium.svg"
               className="h-16 w-16 p-3 border-2 rounded-full shadow-md"
               alt="hero"
               width={500}
@@ -54,7 +51,20 @@ const Hero = () => {
             />
           </a>
         </div>
-        <p>You dont go away from the light huose you go towards it</p>
+        
+<figure className="max-w-screen-md mt-8 mx-auto text-center">
+    <blockquote>
+        <p className="text-2xl italic font-medium text-gray-900 dark:text-white">"You don't go away from the Lighthouse, you go towards it."</p>
+    </blockquote>
+    <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
+        <img width={1080} height={1080} className="w-6 h-6 rounded-full" src="/shantanu.png" alt="profile picture" />
+        <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
+            <cite className="pe-3 font-medium text-gray-900 dark:text-white">Shantanu Naidu </cite>
+            <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">General Manager</cite>
+        </div>  
+    </figcaption> 
+</figure>
+
       </div>
     </>
   );

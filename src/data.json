@@ -27,7 +27,47 @@
         "githubLink": "https://github.com/example/project1",
         "demoLink": "https://medium.com/@yoogiitaa/thrift-shop-ui-ux-case-study-a68cb4563cd"
       }
-    ],
+    ], 
 
-    "contactImg": "/img/contact.jpg"
+    "contactImg": "/img/contact.jpg",
+
+
+    "events": [
+      {
+        "id": 1,
+        "title": "UI/UX Designer",
+        "company": "Company 1",
+        "location": "Location 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "startDate": "2019",
+        "endDate": "2020"
+      },
+      {
+        "id": 2,
+        "title": "UI/UX Designer",
+        "company": "Company 1",
+        "location": "Location 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "startDate": "2019",
+        "endDate": "2020"
+      },
+      {
+        "id": 3,
+        "title": "UI/UX Designer",
+        "company": "Company 1",
+        "location": "Location 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "startDate": "2019",
+        "endDate": "2020"
+      },
+      {
+        "id": 4,
+        "title": "UI/UX Designer",
+        "company": "Company 1",
+        "location": "Location 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "startDate": "2019",
+        "endDate": "2020"
+      }
+    ]
   }
