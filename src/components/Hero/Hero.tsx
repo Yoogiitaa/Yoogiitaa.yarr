@@ -54,7 +54,7 @@ const Hero = () => {
         
 <figure className="max-w-screen-md mt-8 mx-auto text-center">
     <blockquote>
-        <p className="text-2xl italic font-medium text-gray-900 dark:text-white">&#x201C;You don't go away from the Lighthouse, you go towards it.&#x201D;</p>
+        <p className="text-2xl italic font-medium text-gray-900 dark:text-white">&#x201C;You don&#39;t go away from the Lighthouse, you go towards it.&#x201D;</p>
     </blockquote>
     <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
         <img width={1080} height={1080} className="w-6 h-6 rounded-full" src="/shantanu.png" alt="profile picture" />
