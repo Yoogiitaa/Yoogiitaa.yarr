@@ -59,8 +59,7 @@ const Hero = () => {
     <figcaption className="flex items-center justify-center mt-6 space-x-3 rtl:space-x-reverse">
         <img width={1080} height={1080} className="w-6 h-6 rounded-full" src="/shantanu.png" alt="profile picture" />
         <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-500 dark:divide-gray-700">
-            <cite className="pe-3 font-medium text-gray-900 dark:text-white">Shantanu Naidu </cite>
-            <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">General Manager</cite>
+            <cite className="pe-3 font-medium text-gray-900 dark:text-white">Shantanu Naidu</cite>
         </div>  
     </figcaption> 
 </figure>

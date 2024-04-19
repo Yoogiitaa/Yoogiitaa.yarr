@@ -1,73 +1,48 @@
 {
+  "title": "Hi, I'm Yogita Singh",
+  "subtitle": [
+    "I'm a UX designer. I'm passionate about",
+    "creating usable digital products."
+  ],
+  "resume": "https://drive.google.com/file/d/1J9Q6J9Q9J9Q6J9Q6J9Q6J9Q6J9Q6J9Q6/view?usp=sharing",
+  "twitter": "https://twitter.com/yoogiitaa",
+  "dribble": "https://dribbble.com/yoogiitaa",
+  "linkedin": "https://www.linkedin.com/in/yoogiitaa/",
+  "behance": "https://www.behance.net/yoogiitaa",
 
-    "title": "Hi, I'm Yogita Singh",
-    "subtitle": [
-      "I'm a UX designer. I'm passionate about",
-      "creating usable digital products."
-    ],
-    "resume": "https://drive.google.com/file/d/1J9Q6J9Q9J9Q6J9Q6J9Q6J9Q6J9Q6J9Q6/view?usp=sharing",
-    "twitter": "https://twitter.com/yoogiitaa",
-    "dribble": "https://dribbble.com/yoogiitaa",
-    "linkedin": "https://www.linkedin.com/in/yoogiitaa/",
-    "behance": "https://www.behance.net/yoogiitaa",
+  "about": [
+    "I am a UI/UX designer with a passion for creating aesthetically pleasing and efficient websites. I am seeking opportunities to further enhance my skills and experience while contributing to an organization's success.",
+    "The word which best describes me is that I am a CURIOUS person. Curiosity propels us forward. My go-to thought.",
+    "Above written line in motivation is from one of my favourite books \"I came upon a lighthouse by Shantanu Naidu \" and I recommend you to read it. I am also an avid reader and I enjoy reading in my spare time. Art , poetry and nature fascinate me the most."
+  ],
+  "aboutImg": "/img/about.jpg",
 
-    "about":[
-              "I am a UI/UX designer with a passion for creating aesthetically pleasing and efficient websites. I am seeking opportunities to further enhance my skills and experience while contributing to an organization's success.",
-              "The word which best describes me is that I am a CURIOUS person. Curiosity propels us forward. My go-to thought.",
-              "Above written line in motivation is from one of my favourite books \"I came upon a lighthouse by Shantanu Naidu \" and I recommend you to read it. I am also an avid reader and I enjoy reading in my spare time. Art , poetry and nature fascinate me the most."
-    ],
-    "aboutImg": "/img/about.jpg",
+  "projects": [
+    {
+      "id": 1,
+      "title": "Project 1",
+      "description": "Tshop to encourage thrifting. Read more to view the whole case stude.",
+      "image": "/img/project1.png",
+      "githubLink": "https://github.com/example/project1",
+      "demoLink": "https://medium.com/@yoogiitaa/thrift-shop-ui-ux-case-study-a68cb4563cd"
+    }
+  ],
 
-    "projects": [
-      {
-        "id": 1,
-        "title": "Project 1",
-        "description": "Tshop to encourage thrifting. Read more to view the whole case stude.",
-        "image": "/img/project1.png",
-        "githubLink": "https://github.com/example/project1",
-        "demoLink": "https://medium.com/@yoogiitaa/thrift-shop-ui-ux-case-study-a68cb4563cd"
-      }
-    ], 
+  "contactImg": "/img/contact.jpg",
 
-    "contactImg": "/img/contact.jpg",
-
-
-    "events": [
-      {
-        "id": 1,
-        "title": "UI/UX Designer",
-        "company": "Company 1",
-        "location": "Location 1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "startDate": "2019",
-        "endDate": "2020"
-      },
-      {
-        "id": 2,
-        "title": "UI/UX Designer",
-        "company": "Company 1",
-        "location": "Location 1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "startDate": "2019",
-        "endDate": "2020"
-      },
-      {
-        "id": 3,
-        "title": "UI/UX Designer",
-        "company": "Company 1",
-        "location": "Location 1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "startDate": "2019",
-        "endDate": "2020"
-      },
-      {
-        "id": 4,
-        "title": "UI/UX Designer",
-        "company": "Company 1",
-        "location": "Location 1",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "startDate": "2019",
-        "endDate": "2020"
-      }
-    ]
-  }
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Python",
+    "SQL",
+    "Tableau",
+    "Power BI",
+    "Excel",
+    "Pandas",
+    "NumPy",
+    "Matplotlib",
+    "Data Visualization",
+    "Data Cleaning"
+  ]
+}
