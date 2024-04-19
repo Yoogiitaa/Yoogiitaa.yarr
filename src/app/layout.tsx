@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import { url } from "inspector";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <head>
+      <Head>
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Buenos+Aires&display=swap"
@@ -29,7 +30,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
           rel="stylesheet"
         />
-      </head> */}
+        <link rel="icon" href="/favicon.ico" /> 
+      </Head>
       <body className={inter.className}>
         <Navbar />
         {children}
