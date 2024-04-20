@@ -34,7 +34,7 @@ export default function Skills() {
             {skill}
           </motion.li>
         ))}
-      </ul> 
+      </ul>  
     </section>
   );
 }

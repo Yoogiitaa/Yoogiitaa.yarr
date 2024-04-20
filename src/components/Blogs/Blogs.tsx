@@ -1,5 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 interface BlogItem {
     title: string;
@@ -11,6 +13,7 @@ interface BlogItem {
 
 const Blogs: React.FC = () => {
     const [blogs, setBlogs] = useState<BlogItem[]>([]);
+    const [loading, setLoading] = useState<boolean>(true);
 
     useEffect(() => {
         const fetchBlog = async () => {
@@ -21,6 +24,7 @@ const Blogs: React.FC = () => {
                 }
                 const data = await response.json();
                 setBlogs(data.items);
+                setLoading(false);
             } catch (error) {
                 console.error('Error fetching blogs:', error);
             }
@@ -47,16 +51,37 @@ const Blogs: React.FC = () => {
                 <h1 className="text-3xl font-semibold text-gray-800 text-center capitalize lg:text-6xl dark:text-white">Blogs</h1>
 
                 <div className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
-                    {blogs.map((blog, index) => (
-                        <div key={index} className="lg:flex">
-                            <img className="object-cover w-full h-56 rounded-lg lg:w-64" src={extractImageUrl(blog.content)} alt="" />
-                            <div className="flex flex-col justify-between py-6 lg:mx-6">
-                                <a href={blog.link} className="text-xl font-semibold text-gray-800 hover:underline dark:text-white ">{blog.title}</a>
-                                <p className='line-clamp-3'>{removeTags(blog.description)}</p>
-                                <span className="text-sm text-gray-500 dark:text-gray-300">On: {new Date(blog.pubDate).toLocaleDateString()}</span>
+                    {loading ? (
+                        // Skeleton Loading
+                        Array.from(Array(4).keys()).map((index) => (
+                            <div key={index} className="animate-pulse bg-gray-200 dark:bg-gray-800 rounded-lg overflow-hidden shadow-md">
+                                <div className="w-full h-56 bg-gray-400 dark:bg-gray-700"></div>
+                                <div className="p-6">
+                                    <div className="w-3/4 h-6 mb-4 bg-gray-400 dark:bg-gray-700"></div>
+                                    <div className="w-full h-4 mb-4 bg-gray-400 dark:bg-gray-700"></div>
+                                    <div className="w-1/2 h-4 bg-gray-400 dark:bg-gray-700"></div>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))
+                    ) : (
+                        // Display Blogs
+                        blogs.map((blog, index) => (
+                            <motion.div
+                                key={index}
+                                className="lg:flex"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: index * 0.1 }}
+                            >
+                                <Image height={1080} width={1080} className="object-cover w-full h-56 rounded-lg lg:w-64" src={extractImageUrl(blog.content)} alt="" />
+                                <div className="flex flex-col justify-between py-6 lg:mx-6">
+                                    <a href={blog.link} className="text-xl font-semibold text-gray-800 hover:underline dark:text-white">{blog.title}</a>
+                                    <p className='line-clamp-3'>{removeTags(blog.description)}</p>
+                                    <span className="text-sm text-gray-500 dark:text-gray-300">On: {new Date(blog.pubDate).toLocaleDateString()}</span>
+                                </div>
+                            </motion.div>
+                        ))
+                    )}
                 </div>
             </div>
         </section>

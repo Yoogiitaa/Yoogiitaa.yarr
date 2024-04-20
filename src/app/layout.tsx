@@ -19,22 +19,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Buenos+Aires&display=swap"
-        />
+      <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
           rel="stylesheet"
         />
-        <link rel="icon" href="/favicon.ico" /> 
-      </Head>
+      </head>
       <body className={inter.className}>
         <Navbar />
-        {children}
+        {children} 
       </body>
     </html>
   );
