@@ -20,7 +20,7 @@ export default function Skills() {
 
   return (
     <section id="skills" className="flex flex-col items-center justify-center h-screen mb-16 md:mb-24 lg:mb-32 text-center">
-        <h2 className="text-6xl font-semibold text-gray-800 dark:text-white">Skills</h2>
+        <h2 className="text-6xl font-semibold text-gray-800 ">Skills</h2>
       <ul className="flex mt-8 hover:cursor-pointer flex-wrap justify-center text-lg gap-2 text-gray-800">
         {data.skills.map((skill, index) => (
           <motion.li
