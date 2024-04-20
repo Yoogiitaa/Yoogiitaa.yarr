@@ -43,7 +43,7 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-pink-100 to-fuchsia-100">
+        <div className="flex justify-center items-center py-20 md:py-0 min-h-screen bg-gradient-to-r from-pink-100 to-fuchsia-100">
             <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center md:space-x-8">
                 <motion.div // Wrap the div with motion.div for animation
                     initial={{ opacity: 0, y: -50 }} // Initial animation properties
@@ -53,7 +53,7 @@ const ContactForm = () => {
                     <Image width={1080} height={1080} src={data.contactImg} alt="Contact" className="w-auto h-96 rounded-full" />
                 </motion.div>
                 <div className="w-full md:w-96">
-                    <h2 className="text-3xl font-semibold text-gray-800 mb-6">Reach Me Out</h2>
+                    <h2 className="text-3xl font-semibold text-center text-gray-800 mb-6">Reach Me Out</h2>
                     <motion.form // Wrap the form with motion.form for animation
                         onSubmit={handleSubmit}
                         initial={{ opacity: 0, y: 50 }} // Initial animation properties
